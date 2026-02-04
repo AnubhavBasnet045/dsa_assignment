@@ -16,15 +16,23 @@ char stack[MAX];
 int top = -1;
 ```
 **Explanation**
+
+
 . Stack[MAX]
+
 stores operators(+,-,*,/,(,)) during conversion and operands during evaluation.
+
 . top
+
 keep track of index of the top element in the stack.
+
 . top = -1 indicates that the stack is empty.
 
 ## DESCRIPTION OF FUNCTION IMPLEMENTED
 1. push(char x)
+
 Purpose:
+
 Pushes an element onto the stack.
 ```bash
 void push(char x) {
@@ -32,7 +40,9 @@ void push(char x) {
 }
 ```
 2. pop()
+
 Purpose:
+
 Removes and returns the top element from the stack.
 ```bash
 char pop() {
@@ -40,7 +50,9 @@ char pop() {
 }
 ```
 3. priority(char x)
+
 Purpose:
+
 Returns the precedence of operators.
 ```bash
 int priority(char x) {
@@ -50,10 +62,13 @@ int priority(char x) {
 }
 ```
 4. infixtopostfix(char infix[], char postfix[])
+
 Purpose:
+
 Converts an infix to postfix form.
 
 Description:
+
 .Operands are added directly to postfix expression.
 .Operators are pushed based on precedence.
 .Parentheses control operator popping.
@@ -88,10 +103,13 @@ void infixtopostfix(char infix[], char postfix[]){
 }
 ```
 5. evaluatepostfix(char postfix[])
+
 Purpose:
+
 Evaluates the postfix expression using a stack.
 
 Description:
+
 .Operands are pushed onto the stack.
 .Operators pop two operands and compute the result.
 .Final result remain at the top of the stack.

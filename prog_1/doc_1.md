@@ -17,19 +17,28 @@ char stack[MAX];
 int top = -1;
 ```
 **Explanation**
+
 . stack[MAX]
+
 Stores opening brackets encountered in the expression.
+
 . top 
+
 Keeps tracks of index of the topmost element in the stack.
+
 . top=-1 indicates that the stack is empty.
 
 The stack is used to temporarily store opening bracket until a corresponding closing bracket is found.
 
 ## DESCRIPTION OF FUNCTIONS IMPLEMENTED
+
 1.push(char ch)
+
 Purpose:
+
 Pushes an opening bracket onto the stack.
 Description
+
 The top index is incremented first and then the character is sorted at that position.
 ```bash
 void push(char ch){
@@ -37,9 +46,13 @@ stack[++top]=ch;
 }
 ```
 2. pop()
+
 Purpose:
+
 Removes and returns the top element from the stack.
+
 Description:
+
 The character at the current top position is returned and then top is decremented.
 ```bash
 char pop(){
@@ -47,9 +60,13 @@ return stack[top --];
 }
 ```
 3. isMatching(char open, char close)
+
 Purpose:
+
 Checks whether an opening bracket matches the corresponding closing brackets.
+
 Description
+
 Returns 1 if the brackets match, otherwise return 0.
 ```bash
 int isMatching(char open, char close) {
@@ -60,9 +77,13 @@ int isMatching(char open, char close) {
 }
 ```
 4. isBalanced(char exp[])
+
 Purpose:
+
 Determine whether the given expression has balanced parentheses.
+
 Description:
+
 . Scan the expression character by character.
 . Pushes opening brackets onto the stack.
 . Pops and matches brackets when a closing bracket is found.
