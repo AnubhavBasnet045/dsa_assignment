@@ -7,7 +7,6 @@ Run the program by testing following expression-
 
 #include <stdio.h>
 #include <string.h>
-
 #define MAX 100
 
 char stack[MAX];
@@ -62,3 +61,7 @@ int main() {
 
     return 0;
 }
+/*cd prog_1
+clang question1.c -o question1
+./question1
+*/
