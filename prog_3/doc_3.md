@@ -61,6 +61,8 @@ void insert(struct Node **head, int value) {
 3. If the list is empty, the new node becomes the head.
 4. Otherwise, the node is inserted at the end of the list.
 
+
+
 2. reverseTraverse(struct Node *head)
 
 - Purpose:
