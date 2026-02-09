@@ -32,12 +32,13 @@ The stack is used to temporarily store opening bracket until a corresponding clo
 
 ## DESCRIPTION OF FUNCTIONS IMPLEMENTED
 
-1.push(char ch)
+1. **push(char ch)**
 
-Purpose:
+**Purpose:**
 
 Pushes an opening bracket onto the stack.
-Description
+
+**Description**
 
 The top index is incremented first and then the character is sorted at that position.
 ```bash
@@ -45,13 +46,13 @@ void push(char ch){
 stack[++top]=ch;
 }
 ```
-2. pop()
+2. **pop()**
 
-Purpose:
+**Purpose:**
 
 Removes and returns the top element from the stack.
 
-Description:
+**Description:**
 
 The character at the current top position is returned and then top is decremented.
 ```bash
@@ -59,13 +60,13 @@ char pop(){
 return stack[top --];
 }
 ```
-3. isMatching(char open, char close)
+3. **isMatching(char open, char close)**
 
-Purpose:
+**Purpose:**
 
 Checks whether an opening bracket matches the corresponding closing brackets.
 
-Description
+**Description**
 
 Returns 1 if the brackets match, otherwise return 0.
 ```bash
@@ -76,13 +77,13 @@ int isMatching(char open, char close) {
     return 0;
 }
 ```
-4. isBalanced(char exp[])
+4. **isBalanced(char exp[])**
 
-Purpose:
+**Purpose:**
 
 Determine whether the given expression has balanced parentheses.
 
-Description:
+**Description:**
 
 . Scan the expression character by character.
 . Pushes opening brackets onto the stack.
@@ -110,10 +111,15 @@ int isBalanced(char exp[]) {
 ```
 ## ORGANIZATION OF THE main() FUNCTION
 The main() function is organised as follow:
+
 1. Declares a character array to store the input expression.
+
 2. Accepts the expression from the user.
+
 3. Calls the isBalanced() function.
+
 4. Display whether the expression is balanced or not.
+
 ```bash
 int main() {
     char exp[MAX];
