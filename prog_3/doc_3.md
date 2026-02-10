@@ -8,8 +8,11 @@ In a signly linked list, traversal is normally performed in the forward directio
 The objectives of this program are:
 
 1.To create a singly linked list.
+
 2.To insert elements at the end of the linked list.
+
 3.To traverse and display the linked list in reverse order using recursion.
+
 4.To demonstrate the practical application of linked list traversal.
 
 ## DATA STRUCTURE USED
@@ -31,9 +34,10 @@ Stores the integer value of the node.
 Stores the address of the next node in the linked list.
 
 ## DESCRIPTION OF FUNCTION IMPLEMENTED
-1. insert(struct Node **head, int value)
 
-- Purpose;
+1. **insert(struct Node **head, int value)**
+
+**Purpose**
 
 Insert a new node at the end of the linked list.
 ```bash
@@ -54,18 +58,21 @@ void insert(struct Node **head, int value) {
     temp->next = newNode;
 }
 ```
-- DESCRIPTION
+**DESCRIPTION**
 
-1. Dynamically allocates memory for a new node.
-2. Assigns data to the new node.
-3. If the list is empty, the new node becomes the head.
-4. Otherwise, the node is inserted at the end of the list.
+-  Dynamically allocates memory for a new node.
+
+-  Assigns data to the new node.
+
+-  If the list is empty, the new node becomes the head.
+
+-  Otherwise, the node is inserted at the end of the list.
 
 
 
-2. reverseTraverse(struct Node *head)
+2. **reverseTraverse(struct Node *head)**
 
-- Purpose:
+ **Purpose:**
 
 Traverse and display the linked list in reverse order.
 ```bash
@@ -96,10 +103,13 @@ int main() {
 ```
 **Steps Performed in main():**
 
-1. Initiliazes the linked list as empty.
-2. Inserts elements into the linked list.
-3. Calls the reverse traversal function.
-4. Displays the elements in reverse order.
+-  Initiliazes the linked list as empty.
+
+-  Inserts elements into the linked list.
+
+- Calls the reverse traversal function.
+
+-  Displays the elements in reverse order.
 
 ## SAMPLE OUTPUT
 
