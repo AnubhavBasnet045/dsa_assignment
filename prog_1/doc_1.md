@@ -6,6 +6,56 @@ In this program, a stack is used to keep track of opening brackets while scannin
 ## OBJECTIVES
 To write a C program that check whether a given mathematical expression has a balanced number of parentheses using the **stack data structure.**
 
+## ALGORITHM STEPS
+
+1. Start
+
+2. Initialize
+
+ - Declare a stack of size MAX.
+
+ - Set top = -1 to indicate an empty stack.
+
+3. Input
+
+- Read the mathematical expression as a string.
+
+4. Scan the Expression
+
+- Traverse the expression character by character from left to right.
+
+5. If Opening Parenthesis Found
+
+- If the character is (, {, or [, push it onto the stack.
+
+6. If Closing Parenthesis Found
+
+ - If the character is ), }, or ]:
+
+  1. Check if the stack is empty.
+
+   - If empty, the expression is not balanced → Stop.
+
+  2. Pop the top element from the stack.
+
+  3. Check whether the popped opening parenthesis matches the current closing parenthesis.
+
+    - If they do not match, the expression is not balanced → Stop.
+
+7. After Complete Traversal
+
+ - Check if the stack is empty:
+
+   - If empty, the expression is balanced.
+
+   - If not empty, the expression is not balanced.
+
+8. Display Result
+
+ - Print whether the expression has balanced or unbalanced parentheses.
+
+9. Stop
+
 ## DATA STRUCTURES USED
 
 ## Stack Definition
@@ -18,15 +68,15 @@ int top = -1;
 ```
 **Explanation**
 
-. stack[MAX]
+- **stack[MAX]**
 
 Stores opening brackets encountered in the expression.
 
-. top 
+- **top** 
 
 Keeps tracks of index of the topmost element in the stack.
 
-. top=-1 indicates that the stack is empty.
+-  **top=-1** indicates that the stack is empty.
 
 The stack is used to temporarily store opening bracket until a corresponding closing bracket is found.
 
@@ -119,7 +169,6 @@ The main() function is organised as follow:
 3. Calls the isBalanced() function.
 
 4. Display whether the expression is balanced or not.
-
 ```bash
 int main() {
     char exp[MAX];
