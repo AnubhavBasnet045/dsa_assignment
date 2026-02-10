@@ -48,7 +48,7 @@ The input array is used to represent the binary tree in a level-order manner.
 
 1. swap(int *a, int *b)
 
-- Purpose:
+**Purpose:**
  
  Swaps the values of two integers using pointers.
  ```bash
@@ -58,18 +58,18 @@ The input array is used to represent the binary tree in a level-order manner.
     *b = temp;
 }
 ```
-- Description
+**Description**
 
-1. Stores the value of *a in temp.
+- Stores the value of *a in temp.
 
-2. Assigns the value of *b to *a.
+- Assigns the value of *b to *a.
 
-3. Assigns the value of temp to *b.
+- Assigns the value of temp to *b.
 
 
 2. minHeapify(int arr[], int n , int i)
 
-- Purpose:
+**Purpose:**
 
 Ensures that the subtree rooted at index i satisfies Min Heap property.
 ```bash
@@ -90,17 +90,17 @@ void minHeapify(int arr[], int n, int i){
     }
 }
 ```
-- Description
+**Description**
 
-1. Finds the smallest among the root, left child, and right child.
+- Finds the smallest among the root, left child, and right child.
 
-2. If the root is not the smallest, swaps it with the smallest child.
+- If the root is not the smallest, swaps it with the smallest child.
 
-3. ecursively applies minHeapify to the affected subtree to maintain the Min Heap property.
+- ecursively applies minHeapify to the affected subtree to maintain the Min Heap property.
 
 3. maxHeapify(int arr[],int n, int i)
 
-- Purpose:
+**Purpose:**
 
 Ensures that the subtree rooted at index i satisfies Max Heap property.
 ```bash
@@ -121,18 +121,18 @@ void maxHeapify(int arr[], int n, int i){
     }
 }
 ```
-- Description
+**Description**
 
-1. Finds the largest among the root, left child, and right child.
+- Finds the largest among the root, left child, and right child.
 
-2. If the root is not the largest, swaps it with the largest child.
+- If the root is not the largest, swaps it with the largest child.
 
-3. Recursively applies maxHeapify to the affected subtree to maintain the Max Heap property.
+- Recursively applies maxHeapify to the affected subtree to maintain the Max Heap property.
 
 
 4. buildMinHeap(int arr[], int n)
 
-- Purpose:
+ **Purpose:**
 
 Builds a Min Heap from an unsorted array.
 
@@ -143,18 +143,19 @@ void buildMinHeap(int arr[], int n){
     }
 }
 ```
-- Description
+**Description**
 
-1. Starts from the last non-leaf node (n/2 - 1).
+- Starts from the last non-leaf node (n/2 - 1).
 
-2. Calls minHeapify on each node in reverse level order.
+- Calls minHeapify on each node in reverse level order.
 
-3. Ensures the entire tree satisfies the Min Heap property.
+- Ensures the entire tree satisfies the Min Heap property.
 
 
 5. buildMaxHeap(int arr[], int n)
 
-- Purpose:
+**Purpose:**
+
 Builds a Max Heap from an unsorted array.
 
 ```bash
@@ -164,17 +165,17 @@ void buildMaxHeap(int arr[], int n){
     }
 }
 ```
-- Description
+ **Description**
 
-1. Starts from the last non-leaf node.
+- Starts from the last non-leaf node.
 
-2. Calls maxHeapify on each node in reverse level order.
+- Calls maxHeapify on each node in reverse level order.
 
-3. Ensures the entire tree satisfies the Max Heap property.
+- Ensures the entire tree satisfies the Max Heap property.
 
 6. printArray(int arr[], int n)
 
-- Purpose:
+**Purpose:**
 
  Prints the elements of the array representing the heap.
  ```bash
@@ -185,11 +186,11 @@ void buildMaxHeap(int arr[], int n){
     printf("\n");
 }
 ```
-- Description
+**Description**
 
-1. Traverses the array from index 0 to n-1.
+- Traverses the array from index 0 to n-1.
 
-2. Prints each element separated by a space.
+- Prints each element separated by a space.
 
 ## ORGANIZATION OF main() FUNCTION
 ```bash
