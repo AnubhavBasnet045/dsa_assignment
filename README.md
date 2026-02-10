@@ -27,7 +27,7 @@ Follow the steps below to run any program from the repository.
 git clone https://github.com/AnubhavBasnet045/dsa_assignment.git
 ```
 
-***Step 2: Open a Program Directory**
+**Step 2: Open a Program Directory**
 ```bash
 cd dsa_assignment/prog_<number>
 ```
