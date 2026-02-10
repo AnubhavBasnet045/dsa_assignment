@@ -6,7 +6,7 @@ Graphs are non-linear data structure consisting of vertices and edges connecting
 ## OBJECTIVES
 1. To create a graph using an adjacency matrix.
 
-2.To implement Breadth-First Search (BFS) traversal.
+2. To implement Breadth-First Search (BFS) traversal.
 
 3. To implement Depth-First Search (DFS) traversal.
 
@@ -46,7 +46,7 @@ Implements the BFS traversal order using a linear queue.
 
 1. createGraph()
 
-- Purpose
+**Purpose**
 
 To create a graph by reading the number of vertices and the adjacency matrix.
 ```bash
@@ -63,17 +63,17 @@ void createGraph(){
     }
 }
 ```
-- Description
+**Description**
 
-1. Prompts the user to input the number of vertices n.
+- Prompts the user to input the number of vertices n.
 
-2. Reads the adjacency matrix values from the user.
+- Reads the adjacency matrix values from the user.
 
-3. Stores the connections between vertices in adjMatrix.
+- Stores the connections between vertices in adjMatrix.
 
 2. BFS(int start)
 
-- Purpose:
+**Purpose:**
 
 To traverse the graph in Breadth-First Search order starting from the given vertex.
 ```bash
@@ -102,22 +102,22 @@ void BFS(int start){
     printf("\n");
 }
 ```
-- Description
+**Description**
 
-1. Initializes all vertices as unvisited.
+-  Initializes all vertices as unvisited.
 
-2. Marks the starting vertex as visited and enqueues it.
+-  Marks the starting vertex as visited and enqueues it.
 
-3. Repeatedly dequeues a vertex, prints it, and enqueues all its unvisited neighbors.
+-  Repeatedly dequeues a vertex, prints it, and enqueues all its unvisited neighbors.
 
-4. Continues until all reachable vertices are visited.
+-  Continues until all reachable vertices are visited.
 
 
 
 
 3. DFS(int v)
 
-- Purpose:
+   **Purpose:**
 
 To traverse the graph in Depth-First Search order using recursion.
 ```bash
@@ -133,13 +133,13 @@ void DFS(int v){
     }
 }
 ```
-- Description
+**Description**
 
-1. Marks the current vertex as visited and prints it.
+-  Marks the current vertex as visited and prints it.
 
-2. Recursively visits all unvisited neighbors of the current vertex.
+-  Recursively visits all unvisited neighbors of the current vertex.
 
-3. DFS explores as far as possible along each branch before backtracking.
+-  DFS explores as far as possible along each branch before backtracking.
 
 ## ORGANIZATION OF main() FUNCTION
 
