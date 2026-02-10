@@ -5,16 +5,15 @@ A doubly linked list is a linear data structure in which each node contains thre
 
 ## OBJECTIVES
 The objectives of this program are:
+-  To create a doubly linked list.
 
-1. To create a doubly linked list.
+-  To insert a new node after a given node in the list.
 
-2. To insert a new node after a given node in the list.
+-  To delete a specified node from the list.
 
-3. To delete a specified node from the list.
+-  To display the elements of the doubly linked list.
 
-4. To display the elements of the doubly linked list.
-
-5. To understand pointer manipulation in doubly linked lists.
+-  To understand pointer manipulation in doubly linked lists.
 
 ## DATA STRUCTURE USED
 
@@ -27,22 +26,22 @@ struct Node {
 };
 ```
 **EXPLANATION**
-- data
+- **data**
 
 Stores the integer value of the node.
 
-- prev
+- **prev**
 
 Stores the address of the previous node in the list.
 
-- next
+- **next**
 
 Stores the address of the next node in the list.
 
 ## DESCRIPTION OF FUNCTION IMPLEMENTED
-1. insertAfter(struct Node *prevNode, int nweData)
+1. **insertAfter(struct Node *prevNode, int nweData)**
 
-- Purpose:
+ **Purpose:**
 
 To insert a new node after a given node in a doubly linked list.
 ```bash
@@ -63,21 +62,21 @@ void insertAfter(struct Node *prevNode, int newData){
     prevNode->next = newNode;
 }
 ```
-- Description:
+**Description:**
 
-1. Checks whether the given previous node is NULL.
+- Checks whether the given previous node is NULL.
 
-2. Allocates memory for a new node dynamically.
+-  Allocates memory for a new node dynamically.
 
-3. Assigns data to the new node.
+-  Assigns data to the new node.
 
-4. Adjusts the next and prev pointers to insert the node after the specified node.
+-  Adjusts the next and prev pointers to insert the node after the specified node.
 
-5. Maintains the bidirectional links of the doubly linked list.
+-  Maintains the bidirectional links of the doubly linked list.
 
-2. deleteNode(struct Node **head, struct Node *delNode)
+2. **deleteNode(struct Node **head, struct Node *delNode)**
 
-- Purpose;
+**Purpose**
 
 To delete a given node from the doubly linked list.
 ```bash
@@ -97,19 +96,19 @@ void deleteNode(struct Node **head, struct Node *delNode){
     free(delNode);
 }
 ```
-- Description
+**Description**
 
-1. Checks whether the list or the node to be deleted is NULL.
+- Checks whether the list or the node to be deleted is NULL.
 
-2. Updates the head pointer if the node to be deleted is the first node.
+-  Updates the head pointer if the node to be deleted is the first node.
 
-3. Adjusts the prev and next pointers of adjacent nodes.
+-  Adjusts the prev and next pointers of adjacent nodes.
 
-4. Frees the memory occupied by the delete node.
+-  Frees the memory occupied by the delete node.
 
 3. display(struct Node *head)
 
-- Purpose;
+**Purpose;**
 
 To display all elements of the doubly linked list.
 ```bash
@@ -123,13 +122,13 @@ void display(struct Node *head){
     printf("\n");
 }
 ```
-- Description
+**Description**
 
-1. Starts traversal from the head node.
+-  Starts traversal from the head node.
 
-2. Prints each node's data while moving in the forward direction.
+-  Prints each node's data while moving in the forward direction.
 
-3. Continues until the end of the list is reached.
+-  Continues until the end of the list is reached.
 
 
 ## ORGANIZATION OF main() FUNCTION
